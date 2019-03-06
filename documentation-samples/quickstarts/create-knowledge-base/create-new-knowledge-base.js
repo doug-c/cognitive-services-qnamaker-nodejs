@@ -1,5 +1,32 @@
 'use strict';
 
+/* 
+let kb_model = {
+    "name": "Osgood Hall FAQ",
+    "qnaList": [
+        {
+            "id": 0,
+            "answer": "You can use our REST APIs to manage your Knowledge Base. See here for details: https://westus.dev.cognitive.microsoft.com/docs/services/58994a073d9e04097c7ba6fe/operations/58994a073d9e041ad42d9baa",
+            "source": "Custom Editorial",
+            "questions": [
+                "How do I programmatically update my Knowledge Base?"
+            ],
+            "metadata": [
+                {
+                    "name": "category",
+                    "value": "api"
+                }
+            ]
+        }
+    ],
+    "urls": [
+        "https://docs.microsoft.com/en-in/azure/cognitive-services/qnamaker/faqs",
+        "https://docs.microsoft.com/en-us/bot-framework/resources-bot-framework-faq"
+    ],
+    "files": []
+};
+*/
+
 let fs = require('fs');
 let https = require('https');
 
@@ -22,7 +49,7 @@ let subscriptionKey = '<qna-maker-subscription-key>';
 // The data source includes a QnA pair with metadata, the URL for the
 // QnA Maker FAQ article, and the URL for the Azure Bot Service FAQ article.
 let kb_model = {
-    "name": "QnA Maker FAQ",
+    "name": "legalInfoAndReferral",
     "qnaList": [
         {
             "id": 0,
@@ -39,10 +66,7 @@ let kb_model = {
             ]
         }
     ],
-    "urls": [
-        "https://docs.microsoft.com/en-in/azure/cognitive-services/qnamaker/faqs",
-        "https://docs.microsoft.com/en-us/bot-framework/resources-bot-framework-faq"
-    ],
+    "urls": [],
     "files": []
 };
 

@@ -8,10 +8,10 @@ let https = require('https');
 // **********************************************
 
 // Replace this with a valid subscription key.
-let subscriptionKey = 'ADD KEY HERE';
+let subscriptionKey = '36e36852dcbd49efb4d947833f4105b0';
 
 // NOTE: Replace this with a valid knowledge base ID, the one you want to delete.
-let kb = 'ADD KNOWLEDGE BASE ID HERE';
+let kb = 'd25cd2a7-525d-4108-a369-87009d71c142';
 
 let host = 'westus.api.cognitive.microsoft.com';
 let service = '/qnamaker/v4.0';
